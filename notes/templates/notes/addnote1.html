@@ -1,0 +1,10 @@
+{% extends 'layout/layout.html' %}
+{% block main %}
+  <form method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+<input type="submit"   class="btn btn-primary btn btn-lg btn-primary btn-block"
+  id="submit-id-sign_in" /> 
+
+</form>
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends 'layout/layout.html' %}
+{% block main %}
+<div class="container form-box">
+  <div class="text-center">
+    <h2>Please Log In</h2>
+  </div>
+  <form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+<!-- <input type="submit" name="sign_in" value="Log in" class="btn btn-primary btn btn-lg btn-primary btn-block"
+  id="submit-id-sign_in" /> -->
+  <button><a href="{% url 'login' %}"> Log in </a></button>
+</form>
+</div>
+<div class="form-message">
+  <p>
+    Don't have an account? <a href="{% url 'register' %}">Sign up</a>.
+  </p>
+</div>
+
+
+{% endblock %}
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!-- <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="/static/bootstrap/js/bootstrap.min.js"></script> -->
+
+
+
+
+<!-- <input type='hidden' name='csrfmiddlewaretoken' value='z2l8XVjHSiDLS9DWMZldAhv1acWVS4j786bIoOpwY3eggvp03NjkOpsOB9QGBy0F' /> 
+    <div id="div_id_username" class="form-group">
+        <label for="id_username" class="control-label  requiredField">
+                Email address
+        <span class="asteriskField">*</span>
+            </label> 
+        <div class="controls "> 
+            <input autofocus="" class="textinput textInput form-control" id="id_username" maxlength="254" name="username" placeholder="Enter Email" type="email" required /> 
+        </div> 
+    </div> 
+    <div id="div_id_password" class="form-group">
+         <label for="id_password" class="control-label  requiredField">Password<span class="asteriskField">*</span> </label> 
+         <div class="controls "> <input class="textinput textInput form-control" id="id_password" name="password" placeholder="Enter Password" type="password" required /> 
+        </div> 
+    </div>  -->
+<!-- <a href="/password-reset/">Forgot Password?</a> <div class="form-group"> <div id="div_id_remember_me" class="checkbox"> <label for="id_remember_me" class="">  -->
+<!-- <input class="checkboxinput" id="id_remember_me" name="remember_me" type="checkbox" />
+                    Remember me
+                </label>  -->

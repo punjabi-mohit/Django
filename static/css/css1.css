@@ -1,0 +1,42 @@
+hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), silver, rgba(0, 0, 0, 0));
+    margin: auto;
+}
+
+.wrapper{
+    display: grid;
+        grid-template-columns: 15% 15% 15%;
+        grid-column-gap: 28%;
+        grid-row-gap: 1%;
+}
+
+.cards {
+    /* margin-left: 0; */
+    /* margin-right: 0; */
+    width:100%;
+    text-align: center;
+    font-size: 27px;
+    float: left;
+    color: #888b8d;
+    
+}
+
+.remember{
+    font-size: 24px;
+}
+.info{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* .content{
+    font-size: 50px;
+    float: left;
+    /* grid-template-columns: auto; 
+    line-height: 48px;   
+}*/
+
